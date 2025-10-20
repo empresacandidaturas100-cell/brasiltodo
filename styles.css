@@ -8,17 +8,17 @@ body { background: #ffffff; }
 p, li, strong { word-wrap: break-word; }
 
 /* Header */
-#site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #ffffff; }
+#site-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; background: #ffffff !important; }
 #site-header .container { position: relative; }
-#site-header .header { height: var(--header-height); display: flex; align-items: center; justify-content: center; padding: 0; }
+#site-header .header { height: var(--header-height); display: flex; align-items: center; justify-content: center; padding: 0; background: #ffffff !important; }
 
 .header--logo {
-    max-height: 70px; /* CORREÇÃO: Removido o espaço 'px' solto */
+    max-height: 130px; /* Aumentado de 70px para 90px */
     display: block;
 }
 
 /* NOVO: Estilo para o texto SELEÇÃO */
-.header--selecao-text { position: absolute; left: 50%; transform: translateX(-50%); font-size: 48px; font-weight: 700; color: #ffffff; line-height: 1; }
+.header--selecao-text { position: absolute; left: 50%; transform: translateX(-50%); font-size: 48px; font-weight: 700; color: #080808; line-height: 1; }
 .header a { position: absolute; left: 0; display: inline-flex; align-items: center; }
 
 /* Altura/placeholder do sticky header para manter o layout do tema */
@@ -28,7 +28,7 @@ p, li, strong { word-wrap: break-word; }
 .thm-btn { text-transform: none; letter-spacing: .2px; }
 .thm-btn {
   background: linear-gradient(90deg, #0b5ed7 0%, #0a58ca 100%);
-  color: #ffffff !important;
+  color: #000000 !important;
   border: none;
   padding: 10px 16px;
   border-radius: 10px;
